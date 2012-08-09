@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<java version="1.6.0_29" class="java.beans.XMLDecoder"> 
+ <object class="java.util.HashSet"> 
+  <void method="add"> 
+   <object class="ca.ijtech.inventory.objects.Inventory"> 
+    <void property="itemSkuId"> 
+     <string>168134</string> 
+    </void> 
+    <void property="upc"> 
+     <string>33991028611</string> 
+    </void> 
+    <void property="win"> 
+     <string>30214147</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="ca.ijtech.inventory.objects.Inventory"> 
+    <void property="itemSkuId"> 
+     <string>156925</string> 
+    </void> 
+    <void property="upc"> 
+     <string>3399102961</string> 
+    </void> 
+    <void property="win"> 
+     <string>30205379</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="ca.ijtech.inventory.objects.Inventory"> 
+    <void property="itemSkuId"> 
+     <string>156897</string> 
+    </void> 
+    <void property="upc"> 
+     <string>3399102979</string> 
+    </void> 
+    <void property="win"> 
+     <string>30205372</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="ca.ijtech.inventory.objects.Inventory"> 
+    <void property="itemSkuId"> 
+     <string>156949</string> 
+    </void> 
+    <void property="upc"> 
+     <string>3399103082</string> 
+    </void> 
+    <void property="win"> 
+     <string>30205378</string> 
+    </void> 
+   </object> 
+  </void> 
+  <void method="add"> 
+   <object class="ca.ijtech.inventory.objects.Inventory"> 
+    <void property="itemSkuId"> 
+     <string>168134</string> 
+    </void> 
+    <void property="upc"> 
+     <string>3399102861</string> 
+    </void> 
+    <void property="win"> 
+     <string>30214147</string> 
+    </void> 
+   </object> 
+  </void> 
+ </object> 
+</java> 
