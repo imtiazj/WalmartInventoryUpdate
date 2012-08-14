@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: 1.5.0_10 (Sun Microsystems Inc.)
+Main-Class: ca.ijtech.inventory.UpdateInventory
+Class-Path: commons-net-1.4.1.jar jakarta-oro-2.0.8.jar
