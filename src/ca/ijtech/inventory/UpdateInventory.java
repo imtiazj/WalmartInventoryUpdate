@@ -238,11 +238,14 @@ public class UpdateInventory {
 
 				availability.setAvailabilitycode(Messages.getString("inventory.availabilityCode"));
 				availability.setUom(invdata.getUom());
-				availability.setAts(new BigInteger(invdata.getAvailableToSell()));
+				
+				int ats =  getIntValue(invdata.getAvailableToSell()) - getIntValue(invdata.getOrdersInProgress());
+				availability.setAts(new BigInteger(String.valueOf(ats)));
+
 				availability.setMindays(new BigInteger(Messages.getString("inventory.minDays")));
 				availability.setMaxdays(new BigInteger(Messages.getString("inventory.maxDays")));
 				availability.setStartdate(new XMLGregorianCalendarImpl(currentDateTime));
-				System.out.println("Available to sell: " + invdata.getUpc() + " : " + invdata.getAvailableToSell());
+				System.out.println("Available to sell: " + invdata.getUpc() + " : " + ats);
 			} catch (Exception e) {
 				continue;
 			}
@@ -256,6 +259,16 @@ public class UpdateInventory {
 
 	}
 
+	private int getIntValue(String value){
+		int intValue = 0;
+		try {
+			intValue = Integer.valueOf(value).intValue();
+		} catch (Exception e) {
+		}
+		
+		return intValue;
+	}
+	
 	private Wmi setupXMLObjects(GregorianCalendar currentDateTime)
 			throws JAXBException {
 		Wmi wmi = null;
